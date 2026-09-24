@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  # Vite 8 needs a recent Node version
+  NODE_VERSION = "22"
+  # The Web3Forms access key is public by design (it ends up in the browser bundle),
+  # so tell Netlify's secret scanner not to fail the build because of it.
+  SECRETS_SCAN_OMIT_KEYS = "VITE_WEB3FORMS_ACCESS_KEY"
