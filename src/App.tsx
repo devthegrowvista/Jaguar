@@ -47,18 +47,19 @@ export default function App() {
         </main>
         <Footer />
 
-        {/* Floating Fast WhatsApp Action Button for Responsive Mobile & Desktop */}
-        <a
-          href={COMPANY.whatsappHref}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Chat with Jaguar Services on WhatsApp"
-          className="fixed bottom-6 right-6 z-50 flex items-center gap-2.5 px-4 py-3 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full shadow-xl hover:shadow-2xl transition-all duration-200 hover:-translate-y-1 font-semibold text-sm"
-          style={{ letterSpacing: '0.02em' }}
-        >
-          <MessageCircle size={22} className="shrink-0" />
-          <span className="hidden sm:inline">WhatsApp Us</span>
-        </a>
+    
+{/* Floating WhatsApp Button */}
+<a
+  href={COMPANY.whatsappHref}
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Chat with Jaguar Services on WhatsApp"
+  className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full shadow-xl hover:shadow-2xl transition-all duration-200 hover:-translate-y-1"
+>
+  <MessageCircle size={27} className="shrink-0" />
+</a>
+
+
       </div>
     </BrowserRouter>
   );

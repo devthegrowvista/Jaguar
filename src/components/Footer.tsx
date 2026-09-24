@@ -52,10 +52,23 @@ export const Footer: React.FC = () => {
         </div>
       </div>
 
-      <div className="site-container footer-bottom">
-        <span>{COMPANY.copyright}</span>
-        <span>{COMPANY.badge}</span>
-      </div>
+<div className="site-container footer-bottom">
+  <span>{COMPANY.copyright}</span>
+
+  <span>
+    Developed by{' '}
+    <a
+      href="https://thegrowvista.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ color: 'inherit', textDecoration: 'none' }}
+    >
+      The Grow Vista
+    </a>
+  </span>
+</div>
+
+
     </footer>
   );
 };
